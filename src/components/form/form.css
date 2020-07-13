@@ -1,0 +1,158 @@
+.formHello {
+    background: #FAF9FA;
+    padding-bottom: 50px;
+    margin-top: -290px;
+
+}
+
+.form-image {
+    margin-left: -60px;
+}
+
+
+.formHello h2 {
+    font-size: 48px;
+}
+
+.form-section {
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+
+.form-section:after {
+    content: '';
+    display: block;
+    height: 1px;
+    background: #ADADAD;
+}
+
+.form-header {
+    grid-area: header;
+}
+
+.formFlex {
+    max-width: 1220px;
+    margin-left: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2vw;
+
+    grid-template-areas: "header header";
+
+    align-items: center;
+}
+
+
+.formFlex textarea {
+    min-height: 120px;
+    resize: none;
+    width: 100%;
+}
+
+.form-email {
+    width: 100%;
+}
+
+
+.form-input {
+    background: #FFFFFF;
+    border: 1px solid #ADADAD;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 18px;
+    line-height: 160%;
+    padding: 13px 14px 12px 16px;
+}
+
+.form-input:focus {
+    outline: 1px solid #00A4F7;
+    box-shadow: 0 0 3px #00A4F7;
+}
+
+.form-checkbox {
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+.form-checkbox input {
+    margin-right: 10px;
+    flex: 0 1 2%
+}
+
+.form-checkbox label {
+    flex: 0 1 95%;
+    line-height: 100%;
+}
+
+.formFlex div {
+    color: #ADADAD;
+}
+
+.form-btn {
+    color: white;
+    background: #00A4F7;
+    border: none;
+    width: 55%;
+}
+
+.form-btn:disabled {
+    background: #ADADAD;
+    color: grey;
+}
+
+
+.formError {
+    color: red;
+}
+
+.formError:focus {
+    outline: 1px solid red;
+    border-radius: 5px;
+    box-shadow: 0 0 3px red;
+}
+
+
+@media screen and (max-width: 575px) {
+    .form-section {
+        margin-bottom: 0;
+    }
+
+    .formHello h2 {
+        font-size: 30px;
+    }
+
+    .formHello {
+        margin-top: -220px;
+        padding-bottom: 50px;
+        padding-top: 100px;
+    }
+
+    .form-image {
+        margin: 0;
+    }
+
+    .formFlex {
+        margin-top: 55px;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "header";
+        grid-row-gap: 2vh;
+    }
+
+    .form-checkbox label {
+        flex: 0 1 92%;
+        line-height: 100%;
+    }
+
+    .form-btn {
+        width: 100%;
+    }
+
+    .form-input {
+        padding: 10px;
+    }
+
+}

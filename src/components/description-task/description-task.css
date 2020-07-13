@@ -1,0 +1,54 @@
+.sectionContainer {
+    padding: 0 60px;
+}
+
+.descriptionTask {
+    padding-top: 46px;
+    margin-bottom: 40px;
+}
+
+.descriptionTask-header {
+    font-weight: 800;
+    font-size: 54px;
+    margin-bottom: 30px;
+
+}
+
+.descriptionTask-paragraph {
+    display: flex;
+}
+
+
+.descriptionTask-paragraph-grey {
+    margin-left: 20px;
+    color: #ADADAD;
+}
+
+@media screen and (max-width: 575px) {
+    .descriptionTask-header {
+        font-size: 32px;
+        line-height: 120%;
+        margin-bottom: 20px;
+    }
+
+    .descriptionTask {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .descriptionTask-paragraph {
+        width: 100%;
+        flex-wrap: wrap;
+
+    }
+
+    .descriptionTask-paragraph p {
+        margin-bottom: 10px;
+    }
+
+    .descriptionTask-paragraph-grey {
+        margin: 0;
+    }
+
+
+}

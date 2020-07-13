@@ -1,0 +1,54 @@
+.secondBlock {
+    line-height: 150%;
+}
+
+.secondBlock-header {
+    margin-bottom: 27px;
+}
+
+.secondFlex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.secondFlex-t {
+    max-width: 985px;
+}
+
+.secondFlex-p {
+    max-width: 315px;
+    color: #ADADAD;
+}
+
+.secondBlock p {
+    margin-bottom: 27px;
+
+}
+
+.secondBlock ul {
+    margin-bottom: 27px;
+
+}
+.secondBlock-paragraph ul li::before {
+    content: "\26AC";
+    color: #128ACE;
+    font-weight: bold;
+    display: inline-block;
+    width: 1.5em;
+    margin-left: 0.5em;
+}
+
+
+.secondBlock-paragraph ol {
+    counter-reset: num;
+}
+
+.secondBlock-paragraph ol li::before {
+    content: counter(num) '. '; /* Выводим число */
+    counter-increment: num; /* Увеличиваем значение счётчика */
+    display:inline-block;
+    width: 1.5em;
+    height: 100%;
+    margin-left: 0.5em;
+    color: #128ACE;
+   }

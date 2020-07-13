@@ -1,0 +1,42 @@
+.linksApi {
+    margin-bottom: 50px;
+}
+
+.linksApi-header {
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.linksApiFlex {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.linksApi-paragraph {
+    font-size: 16px;
+    line-height: 150%;
+    flex: 0 1 43%;
+}
+
+.copytext {
+    margin-left: 10px;
+    color: grey;
+}
+
+@media screen and (max-width: 575px) {
+    .linksApi {
+        margin-bottom: 40px
+    }
+
+    .linksApi-paragraph {
+        flex: 0 1 auto;
+        margin-top: 20px;
+    }
+
+}

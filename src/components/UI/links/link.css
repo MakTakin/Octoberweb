@@ -1,0 +1,56 @@
+.button-position {
+    display: flex;
+    flex: 0 1 50%;
+    align-self: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.position {
+    display: flex;
+    flex: 0 1 100%;
+    align-self: flex-start;
+    align-items: center;
+}
+
+.linksApi-button {
+    border: none;
+    cursor: pointer;
+    background: #FFF2C3;
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 10px;
+    margin-right: 48px;
+    font-size: 18px;
+
+}
+
+.linksApi-button:focus {
+    outline: none;
+}
+
+
+.linksApi-button img {
+    margin-left: auto;
+}
+
+
+@media screen and (max-width: 575px) {
+
+    .linksApi-button {
+        word-break: break-word;
+        margin: 0;
+
+    }
+
+    .button-position {
+        flex: 0 1 auto;
+        align-items: flex-start;
+    }
+
+    .linksApi-button img {
+        margin-left: 20px;
+    }
+
+
+}

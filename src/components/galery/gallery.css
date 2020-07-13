@@ -1,0 +1,111 @@
+.gallery {
+    margin-bottom: 110px;
+}
+
+.gallery-header {
+    font-size: 48px;
+    line-height: 120%;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.gallery-margin {
+    margin-bottom: 20px;
+    max-width: 985px;
+}
+
+.gallery-copy {
+    display: flex;
+    max-width: 1050px;
+    align-items: center;
+
+}
+
+.gallery-copy span {
+    flex: 1 1 auto;
+}
+
+.gallery-copy img {
+    margin-left: auto;
+
+}
+
+.gallery p {
+    font-size: 20px;
+    max-width: 985px;
+}
+
+.gallery-smallSize {
+    font-size: 16px;
+    max-width: 985px;
+    margin-top: 20px;
+}
+
+.galleryImages {
+    margin: 25px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.gallery-image {
+    position: relative;
+
+}
+
+.gallery-image img {
+    border-radius: 8px;
+
+}
+
+.gallery-image-title {
+    display: flex;
+    position: absolute; /* Position the background text */
+    bottom: 8px; /* At the bottom. Use top:0 to append it to the top */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    height: 94%;
+    width: 100%; /* Full width */
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+
+    /*padding: 5px 5px; !* Some padding *!*/
+}
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modals {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 575px) {
+    .gallery-header {
+        font-size: 30px;
+        line-height: 120%;
+    }
+
+    .gallery-image {
+        max-width: 165px;
+    }
+
+    .gallery-copy {
+        align-items: flex-start;
+    }
+
+    .gallery-copy img {
+        margin-left: 10px;
+    }
+
+
+}
